@@ -33,6 +33,7 @@ type
     procedure DBGridKategoriCellClick(Column: TColumn);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure SQLConnector1AfterConnect(Sender: TObject);
   private
     procedure AmbilKategori;
 
@@ -63,6 +64,11 @@ end;
 procedure TTfrmDataKategoriBarang.FormCreate(Sender: TObject);
 begin
   AmbilKategori;
+end;
+
+procedure TTfrmDataKategoriBarang.SQLConnector1AfterConnect(Sender: TObject);
+begin
+
 end;
 
 procedure TTfrmDataKategoriBarang.BtnDeleteClick(Sender: TObject);

@@ -20,7 +20,7 @@ type
     SQLQueryKategori: TSQLQuery;
     SQLTransaction1: TSQLTransaction;
     procedure BtnTambahKategoriClick(Sender: TObject);
-    procedure EKategoriChange(Sender: TObject);
+    procedure SQLConnector1AfterConnect(Sender: TObject);
   private
 
   public
@@ -48,7 +48,7 @@ begin
       ExecSQL;
       SQLTransaction1.Commit;
       EKategori.Text:='';
-      ShowMessage('Berhasil ditambahkan');
+      ShowMessage('Berhasil bang');
       ModalResult := mrOk;
     end;
   except
@@ -57,7 +57,7 @@ begin
   end;
 end;
 
-procedure TTfrmTambahKategori.EKategoriChange(Sender: TObject);
+procedure TTfrmTambahKategori.SQLConnector1AfterConnect(Sender: TObject);
 begin
 
 end;

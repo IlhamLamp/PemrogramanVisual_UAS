@@ -26,7 +26,9 @@ type
     MenuLogin: TMenuItem;
     MenuLogout: TMenuItem;
     MenuExit: TMenuItem;
+    StaticText1: TStaticText;
     procedure FormCreate(Sender: TObject);
+    procedure LNSClick(Sender: TObject);
     procedure MenuDataBarangClick(Sender: TObject);
     procedure MenuDataCustomerClick(Sender: TObject);
     procedure MenuDataKategoriBarangClick(Sender: TObject);
@@ -35,6 +37,7 @@ type
     procedure MenuLoginClick(Sender: TObject);
     procedure MenuLogoutClick(Sender: TObject);
     procedure MenuTransaksiClick(Sender: TObject);
+    procedure StaticText1Click(Sender: TObject);
 
   private
     FUsername: string;
@@ -68,7 +71,7 @@ begin
          FUsername := frmLogin.EUsername.Text;
          FRole := frmLogin.GetRole;
          EnableMenu(MainMenu1.Items);
-         LNS.Caption := 'SELAMAT DATANG ' + UpperCase(Fusername);
+         LNS.Caption := 'Selamat datang, ' + UpperCase(Fusername);
          LNS.Visible:= true;
          if FRole <> 1 then
          begin
@@ -114,12 +117,22 @@ begin
    end;
 end;
 
+procedure TTfrmMain.StaticText1Click(Sender: TObject);
+begin
+
+end;
+
 procedure TTfrmMain.FormCreate(Sender: TObject);
 begin
   DisableMenu(MainMenu1.items);
   MenuFile.Enabled:=true;
   MenuLogin.Enabled:=true;
   MenuExit.Enabled:=true;
+end;
+
+procedure TTfrmMain.LNSClick(Sender: TObject);
+begin
+
 end;
 
 procedure TTfrmMain.MenuDataBarangClick(Sender: TObject);

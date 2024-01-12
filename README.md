@@ -1,4 +1,4 @@
-## UAS - Pemrograma Visual
+## UAS - Pemrograman Visual
 
 ```bash
 Nama    : Ilham Nur Utomo

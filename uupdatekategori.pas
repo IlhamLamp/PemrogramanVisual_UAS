@@ -21,6 +21,7 @@ type
     SQLTransaction1: TSQLTransaction;
     procedure BtnUpdateKategoriClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure SQLConnector1AfterConnect(Sender: TObject);
   private
     procedure AmbilKategori(id_kategori: Integer);
 
@@ -68,6 +69,11 @@ end;
 
 procedure TTfrmUpdateKategori.FormCreate(Sender: TObject);
 begin
+end;
+
+procedure TTfrmUpdateKategori.SQLConnector1AfterConnect(Sender: TObject);
+begin
+
 end;
 
 procedure TTfrmUpdateKategori.BtnUpdateKategoriClick(Sender: TObject);
