@@ -1,13 +1,13 @@
-## UAS 5 - Pemrograman Desktop: Sistem Basis Data Penjualan Barang
+## UAS - Pemrograma Visual
 
 ```bash
-Nama    : Nurul Najwa Sabilla
-Kelas   : TI.21.A.3
-Nim     : 312110451
+Nama    : Ilham Nur Utomo
+Kelas   : TI.20.A.RPL.-1
+Nim     : 312010129
 ``` 
 
 ### Demo
 
 ```bash
-https://www.youtube.com/watch?v=ncQMeymx5W4
+
 ```
